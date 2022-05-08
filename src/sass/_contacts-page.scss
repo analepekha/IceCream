@@ -1,26 +1,60 @@
 .contacts-page__list {
-  background: #ffffff;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
-  width: 280px;
-  height: 412px;
-  padding: 40px 32px;
-  margin-bottom: 32px;
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: -20px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
   }
 }
 
 .contacts-page__item {
+  font-family: 'DM Sans';
+  max-width: 395px;
+  max-height: 538px;
+  padding: 40px 32px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-basis: calc((100% - 96px) / 3);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 395px;
+    max-height: 538px;
+    padding: 40px 40px;
+  }
+}
+
+.contacts-page__location {
+  margin-bottom: 48px;
   position: relative;
 
-  &:not(:last-child)::after {
+  & {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &::after {
     content: '';
-    width: 216px;
+    width: 100%;
     height: 1px;
     background-color: #e1e1e1;
     position: absolute;
-    top: 126px;
+    top: 125%;
   }
 }
 
@@ -36,6 +70,20 @@
     width: 130px;
     background-color: #c2e297;
   }
+
+  & {
+    @media screen and (min-width: 768px) {
+      width: 73px;
+      height: 28px;
+    }
+  }
+}
+
+.contacts-page__label--green {
+  @media screen and (min-width: 768px) {
+    width: 138px;
+    height: 28px;
+  }
 }
 
 .contacts-page__category {
@@ -45,6 +93,14 @@
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #fff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .contacts-page__city {
@@ -56,19 +112,57 @@
   color: #000;
   margin-top: 20px;
   margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+
+  & {
+    @media screen and (min-width: 768px) {
+      margin-top: 32px;
+    }
+  }
 }
 
 .contacts-page__text {
+  max-width: 243px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   color: #907e82;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
-.contacts-page__item:not(:last-child) {
+.work-time {
   margin-bottom: 48px;
+  position: relative;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    position: absolute;
+    top: 130%;
+  }
+
+  & {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 64px;
+    }
+  }
 }
 
 .work-time__days {
@@ -78,6 +172,14 @@
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #000;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .work-time__times {
@@ -86,6 +188,19 @@
   font-size: 12px;
   line-height: 186%;
   color: #ffa5ba;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.contacts-page__contacts {
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts-page__tel {
@@ -94,6 +209,14 @@
   font-size: 12px;
   line-height: 18px;
   color: #907e82;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .contacts-page__mail {
@@ -102,6 +225,14 @@
   font-size: 12px;
   line-height: 18px;
   color: #907e82;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .work-time__times:not(:last-child) {

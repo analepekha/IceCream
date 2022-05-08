@@ -1,0 +1,24 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 37px;
+  padding-bottom: 21px;
+}
+
+.header__list {
+  display: flex;
+  margin-left: 175px;
+  margin-left: 174px;
+}
+.header__item:not(:last-child) {
+  margin-right: 35px;
+}
+.header__link {
+    
+}

@@ -27,8 +27,17 @@
   letter-spacing: 0.06em;
 }
 
+.footer__social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #fea5bb;
+  transition: background-color $cubic;
+}
 .footer_icon {
-  fill: #fea5bb;
+  fill: white;
 }
 
 .footer__contact {
@@ -44,8 +53,8 @@
 }
 
 .footer__copywrite {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
 
   color: $text-paragraph;
 

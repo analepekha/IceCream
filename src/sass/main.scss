@@ -2,8 +2,12 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+@import './variables';
 @import './reset';
+@import './base';
 @import './container';
 
+@import './hero';
+@import './about';
 @import './slider';
 @import './contacts-page';

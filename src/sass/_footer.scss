@@ -1,0 +1,56 @@
+.footer {
+  background-color: $background-secondary;
+}
+
+.footer_wrapper {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.footer__logo {
+  display: block;
+  flex-direction: column;
+
+  color: $headline-lebel-color;
+
+  font-family: $headline-font;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer__logo-accent {
+  color: $headline-color;
+
+  font-size: 58px;
+  letter-spacing: 0.06em;
+}
+
+.footer_icon {
+  fill: #fea5bb;
+}
+
+.footer__contact {
+  font-family: $text-font;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.85;
+  color: $primary-txt;
+}
+
+.footer__contact-accent {
+  color: $headline-color;
+}
+
+.footer__copywrite {
+  margin-left: auto;
+  margin-right: auto;
+
+  color: $text-paragraph;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}

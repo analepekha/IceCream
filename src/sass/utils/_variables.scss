@@ -23,3 +23,12 @@ $hover-button--red-color: #c7133e;
 
 /* animatoins */
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+/*mixins*/
+
+@mixin font($weight, $size, $lheight, $letSpac) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lheight;
+    letter-spacing: $letSpac;
+}

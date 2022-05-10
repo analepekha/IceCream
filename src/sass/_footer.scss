@@ -2,7 +2,7 @@
   background-color: $background-secondary;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .footer_wrapper {
     display: flex;
     justify-content: space-between;
@@ -64,6 +64,11 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 40px;
+  margin-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .footer__social__item:not(:last-child) {

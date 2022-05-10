@@ -17,13 +17,18 @@
             grid-template-rows: repeat(9, 1fr);
         }
     
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: 1199.8px) {
             display: none;
         }
 }
 
 .grid__item {
-    border-radius: 10px;
+    transition: transform 250ms $cubic;
+
+      &:hover,
+      &:focus {
+          transform: rotate(-60deg) scale(1.2);
+      }
 }
 
 .grid__item-1 {
@@ -74,6 +79,10 @@
 .grid__item-10 {
     grid-column: 7/8;
     grid-row: 4/7;
+}
+
+.gallery-img {
+    border-radius: 25px;
 }
 
 .gallery__group {

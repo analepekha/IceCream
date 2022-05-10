@@ -1,0 +1,243 @@
+.contacts-modal__backdrop {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(196, 196, 196, 0.3);
+  z-index: 10;
+  transition: opacity 500ms, visibility 500ms;
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  transform: rotate(-300deg) scale(0.1);
+
+  &.active {
+    transform: translate(-50%, -50%) rotate(0) scale(1);
+    transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+}
+
+.modal.active,
+.contacts-modal__backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  transform: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.contacts-modal-1 {
+  width: 280px;
+  height: 412px;
+
+  background: linear-gradient(180deg, #ffffff 0%, #fff5f6 100%);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 20px 20px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 500px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+    height: 600px;
+  }
+}
+
+.contacts-modal-1__map {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 500px;
+  }
+}
+
+.contacts-modal-1__button--red {
+  width: 91px;
+  height: 44px;
+  background-color: #d41342;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  padding: 12px 17px 12px 17px;
+  color: #ffffff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 15px;
+    width: 192px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+  }
+}
+
+.contacts-modal-2 {
+  width: 280px;
+  height: 412px;
+
+  background: linear-gradient(180deg, #ffffff 0%, #fff5f6 100%);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 20px 40px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 500px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+    height: 600px;
+  }
+}
+
+.contacts-modal-2__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 46px;
+  }
+}
+
+.contacts-modal-2__sub-title {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  color: #000000;
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+}
+
+.contacts-modal-2__text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 200px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts-modal-2__button--red {
+  width: 91px;
+  height: 44px;
+  background-color: #d41342;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  padding: 12px 17px 12px 17px;
+  color: #ffffff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 15px;
+    width: 192px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+
+.contacts-modal-2__button--white {
+  width: 91px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  padding: 12px 17px 12px 17px;
+  color: #d41443;
+  margin-right: 10px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    width: 174px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.food-truck-modal {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 36px;
+    display: block;
+  }
+}

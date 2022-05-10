@@ -1,4 +1,285 @@
 .about {
-    max-width: 1280px;
-   
+
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 0) and (max-width: (768px - 0.02)) {
+        background-image: url(../images/about/about-section-sm.png);
+        background-repeat: no-repeat;
+        background-position: top 574px center;
+        background-size: contain;
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-section-sm@2x.png);
+    }
+    }
+
+    @media screen and (min-width: 480px) {
+        background-position: top 474px center;
+    }
+
+    background-color: $background-secondary;
+    @media screen and (min-width: 768px) and (max-width: (1280px - 0.02)) {
+        padding-top: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: url(../images/about/about-section-lg.png);
+        background-repeat: no-repeat;
+        background-position: top 253px center;
+        background-size: contain;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-section-lg@2x.png);
+    }
+    }
+    
+    &__container {
+        
+        background-image: url(../images/about/about-milk-sm.png);
+        background-repeat: no-repeat;
+        background-position: top 144px left 20px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-milk-sm@2x.png);
+        background-size: 280px 279px;
+    }
+
+        @media screen and (min-width: 353px) {
+            background-position: top 106px left 20px;
+        }
+                
+
+        @media screen and (min-width: 768px) {
+            // min-height: 500px;
+            background-image: url(../images/about/about-milk-md.png);
+            background-repeat: no-repeat;
+            background-position: top 138px left 32px;
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url(../images/about/about-milk-md@2x.png);
+            background-size: 336px 335px;
+        }
+        }
+
+        @media screen and (min-width: 1280px){
+            // min-height: 656px;
+            background-image: url(../images/about/about-milk-lg.png);
+            background-repeat: no-repeat;
+            background-position: top 176px left 16px;
+
+                @media screen and (min-device-pixel-ratio: 2),
+                    screen and (min-resolution: 192dpi),
+                    screen and (min-resolution: 2dppx) {
+                    background-image: url(../images/about/about-milk-lg@2x.png);
+                    background-size: 501px;
+                }
+        }
+
+
+    }
+}
+
+.about__lebel {
+    margin-bottom: 15px;
+    text-align: center;
+
+    color: $headline-lebel-color;
+    font-family: $headline-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 30px;
+        line-height: 1.13;
+    }
+
+
+}
+
+.about__title {
+    margin-bottom: 351px;
+    text-align: center;
+
+    color: $headline-color;
+    font-family: $headline-font;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+        font-size: 44px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 151px;
+
+        font-size: 58px;
+        line-height: 1.14;
+        letter-spacing: 0.06em;
+    }
+}
+
+.about__txt {
+    position: relative;
+
+
+    padding-left: 5px;
+    padding-right: 65px;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 385px;
+        padding-right: 19px;
+    }
+
+    
+    @media screen and (min-width: 1280px) {
+        padding-left: 641px;
+        padding-right: 146px;
+    }
+}
+
+.about__list {
+    color: $text-paragraph;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.93;
+    }
+}
+
+.about__item--bolt {
+    color: $primary-txt;
+    font-size: 12px;
+    line-height: 1.62;
+    letter-spacing: normal;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.76;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: 0.04em;
+    }
+}
+
+.about__item {
+    margin-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 40px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 32px;
+
+        &:last-child {
+        margin-bottom: 40px; 
+    }
+
+    }
+}
+
+.about__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 176px;
+
+    padding: 12px 37px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+
+    
+    color: $headline-color;
+    background-color: $background-button--white-color;
+    border-radius: 22px;
+
+    &:hover,
+    &:focus {
+        background-color: $hover-button--white-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.31;
+    }
+}
+
+.about__button--icon {
+    margin-left: 11px;
+    transition: transform 500ms $cubic;
+}
+
+.about__button--txt {
+    display: inline;
+}
+
+.about__list--text {
+    display: none;
+}
+
+#about__button:checked~.about__list--text {
+
+    display: block;
+}
+
+.about__button--less {
+    display: none;
+}
+
+#about__button:checked~.about__button .about__button--icon {
+    transform: rotate(180deg);
+}
+
+#about__button:checked~.about__button .about__button--more {
+    display: none;
+}
+
+#about__button:checked~.about__button .about__button--less {
+    display: inline;
 }

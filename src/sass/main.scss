@@ -2,11 +2,20 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-@import './variables';
-@import './reset';
-@import './base';
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './base/base';
+@import './base/reset';
 @import './container';
 
 @import './header';
+@import './hero';
+@import './products';
 @import './about';
+@import './advantages';
+@import './gallery';
+@import './slider';
 @import './contacts-page';
+@import './footer';
+@import './components/contacts-modals';
+@import './modal';

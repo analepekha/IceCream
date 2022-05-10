@@ -1,27 +1,60 @@
 <header class="header">
-    <div class="container header-container">
-        <a class="link" href="">
-            <picture>
-                <source srcset="images/logo/logo.webp 1x, images/logo/logo@2x.webp 2x" type="image/webp">
-                <source srcset="images/logo/logo@2x.png 2x" type="image/png">
-                <img src="images/logo/logo.png" alt="Logo">
-            </picture>
-        </a>
+  <div class="container header__container">
+    <a class="link" href="">
+      <picture>
+        <source srcset="images/logo/logo.webp 1x, images/logo/logo@2x.webp 2x" type="image/webp" />
+        <source srcset="images/logo/logo@2x.png 2x" type="image/png" />
+        <img src="images/logo/logo.png" alt="Logo" />
+      </picture>
+    </a>
 
-        <nav >
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link link" href="">Home</a></li>
-                <li class="header__item"><a class="header__link link" href="">About us</a></li>
-                <li class="header__item"><a class="header__link link" href="">How it’s made?</a></li>
-                <li class="header__item"><a class="header__link link" href="">Our products</a></li>
-                <li class="header__item"><a class="header__link link" href="">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link link current" href="/index.html">Home</a></li>
+        <li class="nav__item"><a class="nav__link link" href="">About us</a></li>
+        <li class="nav__item"><a class="nav__link link" href="">How it’s made?</a></li>
+        <li class="nav__item"><a class="nav__link link" href="">Our products</a></li>
+        <li class="nav__item"><a class="nav__link link" href="">Contact</a></li>
+      </ul>
+    </nav>
 
+    <button type="button" class="burger" aria-label="Switcher menu navigation">
+      <svg width="30" height="20">
+        <use href="images/icons.svg#icon-menu-burger"></use>
+      </svg>
+    </button>
 
+    <!-- Mobile menu navigation -->
+    <div class="mobile-menu" >
+      <button type="button" class="mobile-menu__close">
+        <svg width="14" height="14">
+          <use href="images/icons.svg#icon-menu-close"></use>
+        </svg>
+      </button>
 
+      <button type="button" class="mobile-menu__btn">
+        Buy now
+        <svg class="mobile-menu__btn-icon" width="10" height="12">
+          <use href="images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
 
-
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item"><a class="mobile-nav__link link current" href="/index.html">Home</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link link" href="">About us</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link link" href="">How it’s made?</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link link" href="">Our products</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link link" href="">Contact</a></li>
+        </ul>
+      </nav>
     </div>
 
+    <button type="button" class="header__btn">
+      Buy now
+      <svg class="btn__icon" width="10" height="12">
+        <use href="images/icons.svg#icon-arrow"></use>
+      </svg>
+    </button>
+  </div>
 </header>

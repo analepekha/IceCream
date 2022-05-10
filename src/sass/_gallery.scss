@@ -4,7 +4,21 @@
 }
 
 .gallery {
-    background: linear-gradient(to bottom, $background-secondary 40%, $background-main 40%, $background-main 60%) ;
+    @media screen and (max-width: 348px) {
+            background: linear-gradient(to bottom, $background-secondary 58%, $background-main 58%, $background-main 42%);
+        }
+
+    @media screen and (min-width: 349px) and (max-width: 767px) {
+            background: linear-gradient(to bottom, $background-secondary 56%, $background-main 56%, $background-main 44%);
+        }
+
+    @media screen and (min-width: 768px) {
+            background: linear-gradient(to bottom, $background-secondary 42%, $background-main 42%, $background-main 58%);
+        }
+
+    @media screen and (min-width: 1280px) {
+            background: linear-gradient(to bottom, $background-secondary 40%, $background-main 40%, $background-main 60%);
+        }
 }
 
 .grid {
@@ -90,3 +104,4 @@
             display: none;
         }
 }
+

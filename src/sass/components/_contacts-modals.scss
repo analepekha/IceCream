@@ -19,7 +19,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
-  transform: rotate(-300deg) scale(0.3);
+  transform: rotate(-300deg) scale(0.1);
 
   &.active {
     transform: translate(-50%, -50%) rotate(0) scale(1);
@@ -31,6 +31,7 @@
 .contacts-modal__backdrop.active {
   opacity: 1;
   visibility: visible;
+  transform: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .contacts-modal-1 {
@@ -43,6 +44,16 @@
   padding: 20px 20px;
   text-align: center;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 500px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+    height: 600px;
+  }
 }
 
 .contacts-modal-1__map {
@@ -50,6 +61,15 @@
   margin-right: auto;
   border-radius: 10px;
   margin-bottom: 8px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 500px;
+  }
 }
 
 .contacts-modal-1__button--red {
@@ -86,6 +106,16 @@
   padding: 20px 40px;
   text-align: center;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 500px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+    height: 600px;
+  }
 }
 
 .contacts-modal-2__title {
@@ -99,6 +129,14 @@
   text-transform: uppercase;
   color: #d41443;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 46px;
+  }
 }
 
 .contacts-modal-2__sub-title {
@@ -107,6 +145,16 @@
   letter-spacing: 0.04em;
   margin-bottom: 10px;
   color: #000000;
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts-modal-2__text {
@@ -114,6 +162,14 @@
   line-height: 1.5;
   color: #907e82;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 200px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts-modal-2__button--red {
@@ -171,5 +227,17 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
+  }
+}
+
+.food-truck-modal {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 36px;
+    display: block;
   }
 }

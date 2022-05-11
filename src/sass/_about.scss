@@ -27,7 +27,7 @@
     @media screen and (min-width: 1280px) {
         background-image: url(../images/about/about-section-lg.png);
         background-repeat: no-repeat;
-        background-position: top 257px center;
+        background-position: top 253px center;
         background-size: contain;
 
         @media screen and (min-device-pixel-ratio: 2),
@@ -140,6 +140,9 @@
 }
 
 .about__txt {
+    position: relative;
+
+
     padding-left: 5px;
     padding-right: 65px;
 
@@ -220,6 +223,9 @@
 .about__button {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    width: 176px;
 
     padding: 12px 37px;
 
@@ -245,5 +251,35 @@
 }
 
 .about__button--icon {
-    margin-left: 14px;
+    margin-left: 11px;
+    transition: transform 500ms $cubic;
+}
+
+.about__button--txt {
+    display: inline;
+}
+
+.about__list--text {
+    display: none;
+}
+
+#about__button:checked~.about__list--text {
+
+    display: block;
+}
+
+.about__button--less {
+    display: none;
+}
+
+#about__button:checked~.about__button .about__button--icon {
+    transform: rotate(180deg);
+}
+
+#about__button:checked~.about__button .about__button--more {
+    display: none;
+}
+
+#about__button:checked~.about__button .about__button--less {
+    display: inline;
 }

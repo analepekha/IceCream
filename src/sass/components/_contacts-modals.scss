@@ -17,20 +17,23 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 20;
-  transform: rotate(-300deg) scale(0.3);
-
-  &.active {
-    transform: translate(-50%, -50%) rotate(0) scale(1);
-    transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
+  transform: translate(-50%, -50%) rotate(-90deg) scale(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal.active,
 .contacts-modal__backdrop.active {
   opacity: 1;
   visibility: visible;
+  transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) rotate(0) scale(1);
+  transition: transform 500ms, opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .contacts-modal-1 {
@@ -43,6 +46,16 @@
   padding: 20px 20px;
   text-align: center;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 350px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    height: 500px;
+  }
 }
 
 .contacts-modal-1__map {
@@ -50,6 +63,17 @@
   margin-right: auto;
   border-radius: 10px;
   margin-bottom: 8px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    margin-bottom: 11px;
+  }
 }
 
 .contacts-modal-1__button--red {
@@ -86,6 +110,16 @@
   padding: 20px 40px;
   text-align: center;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 350px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    height: 500px;
+  }
 }
 
 .contacts-modal-2__title {
@@ -98,7 +132,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  margin-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 46px;
+  }
 }
 
 .contacts-modal-2__sub-title {
@@ -107,6 +148,16 @@
   letter-spacing: 0.04em;
   margin-bottom: 10px;
   color: #000000;
+
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts-modal-2__text {
@@ -114,6 +165,11 @@
   line-height: 1.5;
   color: #907e82;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 214px;
+  }
 }
 
 .contacts-modal-2__button--red {
@@ -171,5 +227,17 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
+  }
+}
+
+.food-truck-modal {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    display: block;
   }
 }

@@ -1,15 +1,26 @@
 .contacts-page {
-  background-color: #fff5f6;
+  background: linear-gradient(180deg, #ffffff 24%, #fff4f5 24%, #fff3f4 100%);
+}
+
+.contacts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contacts-page__list {
-  margin-bottom: -20px;
+  width: 100%;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
     margin-left: -16px;
     margin-right: -16px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 54px;
   }
 }
 
@@ -18,13 +29,18 @@
   max-width: 395px;
   max-height: 538px;
   padding: 40px 32px;
-  margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
-
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 16px;
@@ -37,7 +53,7 @@
 
   @media screen and (min-width: 1280px) {
     width: 395px;
-    max-height: 538px;
+    height: 538px;
     padding: 40px 40px;
   }
 }
@@ -134,7 +150,7 @@
 .contacts-page__text {
   max-width: 243px;
   font-size: 12px;
-  line-height: 1.28;
+  line-height: 1.66;
   color: #907e82;
   position: relative;
 
@@ -244,11 +260,11 @@
     flex-direction: initial;
     justify-content: center;
     align-items: initial;
-    margin-bottom: 48px;
   }
 }
 
 .contacts-button--red {
+  display: inline-block;
   width: 161px;
   height: 44px;
   position: relative;
@@ -280,6 +296,7 @@
 }
 
 .contacts-button--white {
+  display: inline-block;
   width: 161px;
   height: 44px;
   position: relative;
@@ -290,7 +307,6 @@
   line-height: 1;
   padding: 12px 30px 12px 17px;
   color: #d41443;
-  margin-bottom: 48px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

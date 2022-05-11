@@ -19,12 +19,31 @@
         </li>
         <li class="about__item"><p>Aliquam erat volutpat. Aenean accumsan.</p></li>
       </ul>
-      <button class="about__button" type="button" data-modal-open>
-        Read more
+
+      <input type="checkbox" id="about__button" hidden />
+
+      <ul class="about__list about__list--text">
+        <li class="about__item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed nihil provident corporis
+          cum numquam accusamus. Dignissimos, dolores vitae voluptate, quam, neque provident impedit
+          suscipit molestiae facilis dolorum fugit deleniti.
+        </li>
+        <li class="about__item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed nihil provident corporis
+          cum numquam accusamus. Dignissimos, dolores vitae voluptate, quam, neque provident impedit
+          suscipit molestiae facilis dolorum fugit deleniti.
+        </li>
+      </ul>
+
+      <label for="about__button" class="about__button"
+        ><span class="about__button--txt">
+          Read <span class="about__button--more">more</span
+          ><span class="about__button--less">less</span></span
+        >
         <svg class="about__button--icon" width="8" height="10">
           <use href="images/icons.svg#about-pointer"></use>
         </svg>
-      </button>
+      </label>
     </div>
   </div>
 </section>

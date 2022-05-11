@@ -126,13 +126,13 @@
     @media screen and (min-width: 768px) {
         width: 100%;
         height: 100%;
-        top: 0;
-        transform: translate(0, -30%);
+       
+        transform: translate(0, -25%);
     }
 
     @media screen and (min-width: 1280px) {
         
-        transform: translate(0, -50%);
+        transform: translate(0, -35%);
     }
 }
 
@@ -251,6 +251,10 @@
 
 .products__item--green {
     background: #C2E297;
+}
+
+.products__card {
+
 }
 
 .products__card__titel {

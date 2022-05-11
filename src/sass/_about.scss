@@ -3,7 +3,9 @@
     margin-right: auto;
     margin-left: auto;
 
-    @media screen and (min-width: 0) and (max-width: (768px - 0.02)) {
+    @media screen and (max-width: (768px - 0.02)) {
+
+        padding-bottom: 0;
         background-image: url(../images/about/about-section-sm.png);
         background-repeat: no-repeat;
         background-position: top 574px center;
@@ -21,7 +23,7 @@
 
     background-color: $background-secondary;
     @media screen and (min-width: 768px) and (max-width: (1280px - 0.02)) {
-        padding-top: 0;
+        padding-top: 20px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -251,7 +253,6 @@
 }
 
 .about__button--icon {
-    margin-left: 11px;
     transition: transform 500ms $cubic;
 }
 

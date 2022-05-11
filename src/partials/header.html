@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container header__container">
-    <a class="link" href="">
+    <a class="link" href="/index.html">
       <picture>
         <source srcset="images/logo/logo.webp 1x, images/logo/logo@2x.webp 2x" type="image/webp" />
         <source srcset="images/logo/logo@2x.png 2x" type="image/png" />
@@ -10,8 +10,8 @@
 
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link link current" href="/index.html">Home</a></li>
-        <li class="nav__item"><a class="nav__link link" href="#about">About us</a></li>
+        <li class="nav__item"><a class="nav__link link current" href="#hero">Home</a></li>
+        <li class="nav__item"><a class="nav__link link" href="#about-us">About us</a></li>
         <li class="nav__item"><a class="nav__link link" href="#about">How it’s made?</a></li>
         <li class="nav__item"><a class="nav__link link" href="#products">Our products</a></li>
         <li class="nav__item"><a class="nav__link link" href="#contacts">Contact</a></li>
@@ -22,8 +22,7 @@
       type="button"
       class="burger"
       aria-label="Switcher menu navigation"
-      aria-expanded="false"
-      data-menu-button
+      menu-button
     >
       <svg width="30" height="20">
         <use href="images/icons.svg#icon-menu-burger"></use>
@@ -31,14 +30,14 @@
     </button>
 
     <!-- Mobile menu navigation -->
-    <div class="mobile-menu" data-menu>
-      <button type="button" class="mobile-menu__close" aria-expanded="false" data-menu-button>
+    <div class="mobile-menu" header-menu>
+      <button type="button" class="mobile-menu__close" menu-close>
         <svg width="14" height="14">
           <use href="images/icons.svg#icon-menu-close"></use>
         </svg>
       </button>
 
-      <button type="button" class="mobile-menu__btn" data-modal-open>
+      <button type="button" class="mobile-menu__btn" mobile-modal-open>
         Buy now
         <svg class="mobile-menu__btn-icon" width="8" height="10">
           <use href="images/icons.svg#about-pointer"></use>
@@ -48,10 +47,10 @@
       <nav class="mobile-nav">
         <ul class="mobile-nav__list">
           <li class="mobile-nav__item">
-            <a class="mobile-nav__link link current" href="/index.html">Home</a>
+            <a class="mobile-nav__link link current" href="#hero">Home</a>
           </li>
           <li class="mobile-nav__item">
-            <a class="mobile-nav__link link" href="#about">About us</a>
+            <a class="mobile-nav__link link" href="#about-us">About us</a>
           </li>
           <li class="mobile-nav__item">
             <a class="mobile-nav__link link" href="#about">How it’s made?</a>
@@ -66,7 +65,7 @@
       </nav>
     </div>
 
-    <button type="button" class="header__btn" data-modal-open>
+    <button type="button" class="header__btn" header-modal-open>
       Buy now
       <svg class="btn__icon" width="8" height="10">
         <use href="images/icons.svg#about-pointer"></use>
@@ -75,9 +74,9 @@
 
     <!-- Header modal -->
     
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" header-modal>
       <div class="modal-wrapper">
-        <button class="modal-btn" type="button" data-modal-close>
+        <button class="modal-btn" type="button" header-modal-close>
           <svg width="18" height="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>

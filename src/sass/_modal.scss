@@ -1,249 +1,251 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
-    transition: opacity 250ms linear, visibility 250ms linear;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-wrapper {
-    width: 320px;
-    padding: 25px;
+  width: 320px;
+  padding: 25px;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-    transform: translate(-50%, -50%);
-    background-color: #FFF5F6;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 24px;
+  transform: translate(-50%, -50%);
+  background-color: #fff5f6;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        width: 450px;
-        padding: 40px;
-    }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    padding: 40px;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 528px;
-        padding: 40px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    padding: 40px;
+  }
 }
 
 .modal-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
 
-    background-color: transparent;
-    fill: $background-button--red-color;
-    cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  background-color: transparent;
+  fill: $background-button--red-color;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.modal-btn:hover, .modal-btn:focus {
-border-color: $background-button--red-color;
+  &:hover,
+  &:focus {
+    border-color: $background-button--red-color;
+  }
 }
 
 .modal-heder {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 
-    @include font(700, 18px, 1.15, 0.03em);
-    text-align: center;
-    color: $background-button--red-color;
+  @include font(700, 18px, 1.15, 0.03em);
+  text-align: center;
+  color: $background-button--red-color;
 
-    @media screen and (min-width: 480px) {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 .modal-form {
-    position: relative;
-    margin-bottom: 28px;
+  position: relative;
+  margin-bottom: 28px;
 }
 
 .modal-form-comment {
-    position: relative;
-    margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .modal-label {
-    position: absolute;
-    left: 0;
-    top: -16px;
-    @include font(null, 12px, 1.17, 0.01em);
-    color: #000000;
+  position: absolute;
+  left: 0;
+  top: -16px;
+  @include font(null, 12px, 1.17, 0.01em);
+  color: #000000;
 }
 
 .modal-input {
-    width: 100%;
-    height: 33px;
-    border: 1px solid $background-button--red-color;
-    background-color: transparent;
-    box-sizing: border-box;
-    border-radius: 4px;
+  width: 100%;
+  height: 33px;
+  border: 1px solid $background-mobile--border;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 4px;
 
-    padding: 12px 42px;
+  padding: 12px 42px;
 
-    cursor: pointer;
-    outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-@media screen and (min-width: 480px) {
-        height: 40px;
-    }
+  &:hover,
+  &:focus {
+    border-color: $background-button--red-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    height: 40px;
+  }
 }
 
-    .modal-input:hover, .modal-input:focus{
-        border: 2px solid #d41443;
-    }
 .modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon{
-    fill: $background-button--red-color;
+.modal-input:focus + .modal-icon {
+  fill: $background-button--red-color;
 }
 
 .modal-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    fill: $headline-lebel-color;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  fill: $headline-lebel-color;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea {
-    display: block;
-    resize: none;
-    width: 100%;
-    padding: 12px 16px;
-    background-color: transparent;
-    border: 1px solid $background-button--red-color;
-    box-sizing: border-box;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  resize: none;
+  width: 100%;
+  padding: 12px 16px;
+  background-color: transparent;
+  border: 1px solid $background-mobile--border;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus,
-    &:hover {
-        border: 2px solid $background-button--red-color;
-    }
+  &:focus,
+  &:hover {
+    border-color: $background-button--red-color;
+  }
 }
-   .modal-textarea::placeholder {
-        @include font(null, 14px, 1.14, 0.01em);
-        color: rgba(117, 117, 117, 0.5);
-    }
-
+.modal-textarea::placeholder {
+  @include font(null, 14px, 1.14, 0.01em);
+  color: rgba(117, 117, 117, 0.5);
+}
 
 .modal-agreement {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .agreement-lable {
-    font-size: 12px;
-    line-height: 1.71;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
-    margin-bottom: 18px;
+  font-size: 12px;
+  line-height: 1.71;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 18px;
 
-    @media screen and (min-width: 480px) {
-        justify-content: center;
-        margin-bottom: 30px;
-    }
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .agreement-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15px;
-    height: 15px;
-    fill: transparent;
-    border-radius: 2px;
-    border: 2px solid $background-button--red-color;
-    margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  fill: transparent;
+  border-radius: 2px;
+  border: 1px solid $background-button--red-color;
+  margin-right: 5px;
 }
 
 .modal-agreement:checked + .agreement-icon {
-    fill: #fff;
-    background-color: $background-button--red-color;
-    border-color: $background-button--red-color;
+  fill: #fff;
+  background-color: $background-button--red-color;
+  border-color: $background-button--red-color;
 }
 
 .link-agreement {
-    text-decoration: none;
-    @include font(null, 12px, 1.71, 0.03em);
-    text-decoration-line: underline;
-    margin-left: 25px;
-    color: $background-button--red-color;
+  text-decoration: none;
+  @include font(null, 12px, 1.71, 0.03em);
+  text-decoration-line: underline;
+  margin-left: 25px;
+  color: $background-button--red-color;
 
-    @media screen and (min-width: 480px) {
-        margin-left: 5px;
-    }
+  @media screen and (min-width: 480px) {
+    margin-left: 5px;
+  }
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-    }
-
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .submit-btn {
-    display: flex;
-    width: 200px;
-    height: 50px;
+  display: flex;
+  width: 200px;
+  height: 50px;
 
-    margin: 0 auto 0;
-    justify-content: center;
-    align-items: center;
+  margin: 0 auto 0;
+  justify-content: center;
+  align-items: center;
 
-    background: $background-button--red-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
+  background: $background-mobile--border;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  outline: none;
 
-    @include font(700, 16px, 1.88, 0.06em);
-    color: #ffffff;
+  @include font(700, 16px, 1.88, 0.06em);
+  color: #ffffff;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        background-color: $hover-button--red-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: $hover-button--red-color;
+  }
 }

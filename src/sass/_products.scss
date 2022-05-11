@@ -113,17 +113,21 @@
     content: "";
     display: inline-block;
 
+    top: -250px;
+    left: 50%;
+
     background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    width: 100%;
+    width: 280px;
     height: 100%;
-
-    
-    top: -140px;
+   
+    transform: translateX(-50%);
 
     @media screen and (min-width: 768px) {
+        top: -140px;
+        left: 0;
         width: 100%;
         height: 100%;
        
@@ -319,6 +323,8 @@
         font-size: 14px;
         line-height: 1.76;
 
+        overflow: hidden;
+
         width: 160px;
         height: 150px;
     }
@@ -356,8 +362,11 @@
     fill: $headline-color;
 }
 
-.products__card__link:hover,
-.products__card__link:focus .products__card__link {
+.products__card__link:hover {
+    background-color: $headline-color;
+}
+
+.products__card__link:focus  {
     background-color: $headline-color;
 
 }

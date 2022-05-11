@@ -1,17 +1,19 @@
 .contacts-page {
-  background-color: #fff5f6;
+  background: linear-gradient(180deg, #ffffff 24%, #fff4f5 24%, #fff3f4 100%);
 }
 
 .contacts-container {
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contacts-page__list {
+  width: 100%;
   margin-bottom: -20px;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
     margin-left: -16px;
     margin-right: -16px;
   }
@@ -243,16 +245,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 32px;
 
   @media screen and (min-width: 768px) {
     flex-direction: initial;
     justify-content: center;
     align-items: initial;
-    margin-bottom: 48px;
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 56px;
   }
 }
 
 .contacts-button--red {
+  display: inline-block;
   width: 161px;
   height: 44px;
   position: relative;
@@ -284,6 +292,7 @@
 }
 
 .contacts-button--white {
+  display: inline-block;
   width: 161px;
   height: 44px;
   position: relative;

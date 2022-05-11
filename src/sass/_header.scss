@@ -40,6 +40,11 @@
   font-size: 16px;
   line-height: 1.31;
   color: $text-white;
+  transition: color 250ms $cubic;
+
+  &:hover, &:focus {
+    color: $headline-color;
+  }
 
   &.current {
     color: $headline-color;
@@ -50,6 +55,12 @@
   display: flex;  
   margin-left: auto;
   padding: 0;
+  outline: none;
+
+  &:hover,
+    &:focus {
+      fill: black;
+    }
 
 
 @media screen and (min-width: 768px) {
@@ -70,6 +81,7 @@
   color: $headline-color;
   background: $background-main;
   border-radius: 22px;
+  outline: none;
   transition: background $cubic;
 
   &:hover, &:focus {

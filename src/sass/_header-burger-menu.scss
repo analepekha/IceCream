@@ -10,7 +10,7 @@
   transform: translateX(100%);
   visibility: hidden;
   pointer-events: none;
-  transition: transform $cubic, visibility $cubic;
+  transition: transform 250ms $cubic, visibility 250ms $cubic;
 
   &.is-open {
     transform: translateX(0);

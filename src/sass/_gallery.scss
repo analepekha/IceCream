@@ -4,12 +4,8 @@
 }
 
 .gallery {
-    @media screen and (max-width: 348px) {
-            background: linear-gradient(to bottom, $background-secondary 58%, $background-main 58%, $background-main 42%);
-        }
-
-    @media screen and (min-width: 349px) and (max-width: 767px) {
-            background: linear-gradient(to bottom, $background-secondary 56%, $background-main 56%, $background-main 44%);
+    @media screen and (max-width: 767px) {
+            background: linear-gradient(to bottom, $background-secondary 44%, $background-main 44%, $background-main 56%);
         }
 
     @media screen and (min-width: 768px) {

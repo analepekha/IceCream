@@ -136,6 +136,7 @@
     }
 }
 
+<<<<<<< Updated upstream
 .products__item--pink::before {
          @media screen and (max-width: 767px) {
     
@@ -169,6 +170,16 @@
             background-image: url(/images/Products/products-L-pic1@2x.png);
             }
     }
+=======
+.products__item::before 
+.pink{
+    background-image: url(/images/Products/products-L-pic1.png);
+}
+
+.products__item::before,
+.yellow {
+    background-image: url(/images/Products/products-L-pic2.png);
+>>>>>>> Stashed changes
 }
 
 .products__item--yellow::before {
@@ -365,3 +376,4 @@
 .products__card__link:focus .products__link__arrow {
     fill: white;
 }
+добавить анимацию 

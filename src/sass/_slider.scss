@@ -191,7 +191,8 @@
 }
 .swiper-pagination {
     position: relative;
-    height: 15px;
+    display: flex;
+    justify-content: center;
     margin-top: 16px;
 
     @media screen and (min-width:768px) {
@@ -229,7 +230,9 @@
     }
 }
 .swiper-pagination-bullet {
-    display: inline-block;
+    top: 0;
+    display: flex;
+
     width: 12px;
     height: 12px;
     fill: #D9D9D9;

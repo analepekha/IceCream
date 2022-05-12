@@ -1,8 +1,8 @@
 (() => {
-  const menuBtnRef = document.querySelector('[mobile-modal-open]');
-  const menuHeaderRef = document.querySelector('[header-modal-open]');
-  const mobileMenuRef = document.querySelector('[header-modal]');
-  const mobileBtnClose = document.querySelector('[header-modal-close]');
+  const menuBtnRef = document.querySelector('[data-mobile-modal-open]');
+  const menuHeaderRef = document.querySelector('[data-header-modal-open]');
+  const mobileMenuRef = document.querySelector('[data-header-modal]');
+  const mobileBtnClose = document.querySelector('[data-header-modal-close]');
 
   menuBtnRef.addEventListener('click', () => {
     mobileMenuRef.classList.toggle('is-hidden');

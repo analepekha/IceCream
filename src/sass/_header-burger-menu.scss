@@ -3,7 +3,7 @@
   top: 0;
   right: 0;
   width: 250px;
-  height: 508px;
+  height: 100%;
   padding-top: 60px;
   background-color: $background-mobile;
   filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
@@ -17,11 +17,18 @@
     visibility: visible;
     pointer-events: initial;
   }
+
   @media screen and (min-width: 768px) {
     height: 100%;
-    width: 254px;
+    width: 35%;
+  }
+
+  @media screen and (min-width: 1001px) {
+    height: 100%;
+    width: 40%;
   }
 }
+
 .mobile-menu__close {
   position: absolute;
   top: 20px;

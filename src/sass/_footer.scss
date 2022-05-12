@@ -1,5 +1,21 @@
 .footer {
   background-color: $background-secondary;
+  position: relative;
+
+  &::after {
+    content: '';
+    bottom: 78px;
+    // left: -;
+    width: 100vw;
+
+    height: 1px;
+    background-color: #e1e1e1;
+    position: absolute;
+
+    @media screen and (min-width: 768px) {
+      bottom: 42px;
+    }
+  }
 }
 
 .section_footer {
@@ -133,8 +149,6 @@
   letter-spacing: 0.02em;
   padding-top: 16px;
   padding-bottom: 20px;
-
-  border-top: 1px solid #e1e1e1;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;

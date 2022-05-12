@@ -86,6 +86,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
   &--green {
     width: 130px;
     background-color: #c2e297;
@@ -95,6 +96,7 @@
     @media screen and (min-width: 768px) {
       width: 73px;
       height: 28px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -123,14 +125,24 @@
   }
 }
 
+.contacts-page__item-city {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 8px;
+  }
+}
+
 .contacts-page__city {
   font-weight: 400;
   font-size: 12px;
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #000;
-  margin-top: 20px;
-  margin-bottom: 8px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -138,12 +150,6 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 16px;
-  }
-
-  & {
-    @media screen and (min-width: 768px) {
-      margin-top: 32px;
-    }
   }
 }
 
@@ -175,10 +181,16 @@
     top: 125%;
   }
 
-  & {
-    @media screen and (min-width: 768px) {
-      margin-bottom: 64px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+  }
+}
+
+.work-time__item:not(:last-child) {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
   }
 }
 
@@ -217,11 +229,14 @@
   flex-direction: column;
 }
 
+.contacts-page__contacts-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .contacts-page__tel {
   font-size: 12px;
   line-height: 1.28;
   color: #907e82;
-  margin-bottom: 8px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -246,10 +261,6 @@
   }
 }
 
-.work-time__times:not(:last-child) {
-  margin-bottom: 8px;
-}
-
 .contacts-button {
   background-color: #fff5f6;
   display: flex;
@@ -260,6 +271,15 @@
     flex-direction: initial;
     justify-content: center;
     align-items: initial;
+  }
+}
+
+.contacts-button__item:not(:last-child) {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 15px;
   }
 }
 
@@ -275,13 +295,10 @@
   line-height: 1;
   padding: 12px 30px 12px 17px;
   color: #ffffff;
-  margin-bottom: 10px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    margin-right: 15px;
     width: 192px;
   }
 

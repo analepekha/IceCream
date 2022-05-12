@@ -223,6 +223,7 @@
 
 .outlets__item {
     position: relative;
+    
     padding-top: 2px;
     padding-right: 10px;
 
@@ -262,27 +263,6 @@
     
 }
 
-.outlets__amount {
-    font-family: $headline-font;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.14;
-    
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-     color: $headline-color;
-
-    @media screen and (min-width: 1280px) {
-        font-size: 46px;
-        line-height: 1.15;
-
-        &:not(:last-child) {
-            margin-bottom: 2px;
-        }
-    } 
-}
-
 .outlets__desc {
     font-family: $text-font;
     font-weight: 400;
@@ -295,6 +275,27 @@
         font-size: 14px;
         line-height: 1.29;
     }
+}
+
+.outlets__amount {
+    display: block;
+
+    font-family: $headline-font;
+    font-size: 28px;
+    line-height: 1.14;
+    
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+     color: $headline-color;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 2px;
+        
+        font-size: 46px;
+        line-height: 1.15;
+        
+    } 
 }
 
 // Hero Picture
@@ -320,7 +321,7 @@
 
      &--ice-cream {
         @media screen and (max-width: 767px) {
-            right: 0;
+            right: -62px;
             bottom: 0;
             
             z-index: 1;
